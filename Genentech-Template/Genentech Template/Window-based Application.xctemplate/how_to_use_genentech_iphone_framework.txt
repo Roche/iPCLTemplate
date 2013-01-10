@@ -1,0 +1,15 @@
+1) Unzip attached GenentechiPhoneApp.zip to ~/Library/Developer/Xcode/Templates/  (i.e where ~ is user's home directory). 
+   After this in ~/Library/Developer/Xcode/Templates/ there should be a Genentech-Template directory
+   NOTE: As of XCode 4.3, templates directory was moved to: /Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/
+
+2) Launch XCode, select New Project and then select "Genentech Template" as the template.  NOTE: DO NOT USE SPACES OR SPECIAL CHARACTERS IN PROJECT NAME
+
+3) Read readme.txt contained the project file to start your usage of Genentech iPhone framework 
+
+4) The project is initially created as an iPhone application.  To convert to Universal or iPad app right click on the target and select "Upgrade Current Target for iPadÉ"
+
+5) When compiling the newly created project, there are 2 warnings regarding libOmniture library. These warnings come from the linker which warns that the library used does not match the compiled architecture. This is because the template picks all libraries from the project and adds them to the linking process. 
+ To get rid of this warning simply open "Targets -> "your project name" -> Build Phases -> Link Binary with Libraries" and remove both libOmnitureAppMeasurement-iPhoneDevice.a and   libOmnitureAppMeasurement-iPhoneSimulator.a from there. They are linked anyway by setting the appropriate linker flags which can be seen in BuildSettings -> Other Linker Flags. There the correct version of library is chosen for each target.
+
+6) Created project will contain libiPhoneCommonLibrary_X.Y.a binary which contains compiled version of the iPhone Common Library. X.Y are version numbers. This library also has an embedded timestamp/long version that can be inspected by calling: 
+ruby libraryVersionChecker.rb Dependencies/libiPhoneCommonLibrary_2.1.a in the top project folder. This timestamp is treated as bundle version for the library and can prove helpful to precisely identify the library.
