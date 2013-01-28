@@ -80,7 +80,7 @@
 	<key>appDesc</key>
 	<string>YOUR APP DESCRIPTION</string>
 	<key>appCopyright</key>
-	<string>© 2010, Genentech Inc</string>
+	<string>© 2013, Genentech Inc</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

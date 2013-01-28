@@ -213,6 +213,7 @@
 		<string>Dependencies/KeyValuePair.h</string>
 		<string>Dependencies/LaunchViewProtocol.h</string>
 		<string>Dependencies/LoggingUtils.h</string>
+                <string>Dependencies/LoginManager.h</string>
 		<string>Dependencies/LogInViewController.h</string>
 		<string>Dependencies/LoginViewProtocol.h</string>
 		<string>Dependencies/LaunchViewProtocol.h</string>
@@ -573,6 +574,13 @@
 			<string>Dependencies</string>
 			<key>Path</key>
 			<string>Dependencies/LoggingUtils.h</string>
+		</dict>
+                <key>Dependencies/LoginManager.h</key>
+		<dict>
+			<key>Group</key>
+			<string>Dependencies</string>
+			<key>Path</key>
+			<string>Dependencies/LoginManager.h</string>
 		</dict>
 		<key>Dependencies/MessageView.h</key>
 		<dict>
