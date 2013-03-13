@@ -254,7 +254,7 @@
 		<string>Dependencies/YAJLParser.h</string>
 		<string>Dependencies/admsAppLibrary.a</string>
 		<string>Dependencies/libYAJLIPhone.a</string>
-		<string>Dependencies/libiPhoneCommonLibrary_2.2.a</string>
+		<string>Dependencies/libiPhoneCommonLibrary-2.2.a</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -799,12 +799,12 @@
 			<key>Path</key>
 			<string>Dependencies/libYAJLIPhone.a</string>
 		</dict>
-		<key>Dependencies/libiPhoneCommonLibrary_2.2.a</key>
+		<key>Dependencies/libiPhoneCommonLibrary-2.2.a</key>
 		<dict>
 			<key>Group</key>
 			<string>Dependencies</string>
 			<key>Path</key>
-			<string>Dependencies/libiPhoneCommonLibrary_2.2.a</string>
+			<string>Dependencies/libiPhoneCommonLibrary-2.2.a</string>
 		</dict>
 		<key>Dependencies/yajl_common.h</key>
 		<dict>
